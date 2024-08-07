@@ -1,6 +1,9 @@
-var a = 30;
-if(true){
-    let a = 20;
-    console.log(a);
+function scoping(){
+    if(true){
+        var varVariable = "I'm a var variable.";
+        let letVariable = "I'm a let variable.";
+    }
+    console.log(varVariable);
+    console.log(letVariable);
 }
-console.log(a);
+scoping();
